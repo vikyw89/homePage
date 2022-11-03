@@ -70,13 +70,13 @@ p {
 }
 
 button {
+    word-wrap: normal;
     background-color: #3882f6;
     border-radius: 5px;
     padding: 5px;
     width: 100px;
     color: #F9FAF8;
     border-width: thin;
-    height: 30px;
     border-color: white;
     transition-duration: 1s;
 }
