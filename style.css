@@ -1,12 +1,13 @@
-/* {
-    border: 1px solid;
+* {
+    /*border: 1px solid;*/
     font-family: "Roboto";
-} */
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
     background-color: #1F2937;
 }
 
@@ -30,7 +31,8 @@ header {
 
 .navigations {
     display:flex;
-    gap:20px;
+    justify-content: space-between;
+    gap:5px;
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -41,13 +43,13 @@ header {
     gap: 50px;
     flex-wrap: wrap;
     padding:5vw;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .section1c1, .section1c2 {
     flex-basis: 50%;
     flex: 1;
-    min-width: 400px;
+    min-width: 200px
 }
 
 .section1c1 {
@@ -63,6 +65,7 @@ header {
 
 p {
     color: #F9FAF8;
+    padding-bottom: 5px;
 }
 
 button {
@@ -71,14 +74,16 @@ button {
     padding: 5px;
     width: 100px;
     color: #F9FAF8;
-    border-width: medium;
+    border-width: thin;
     height: 30px;
     border-color: white;
+    transition-duration: 1s;
 }
 
 button:hover {
-    background-color: aquamarine;
+    background-color: white;
     color: #1F2937;
+    transform: scale(1.3);
 }
 
 .section2 {
@@ -86,8 +91,8 @@ button:hover {
     flex-direction: column;
     background-color: #F9FAF8;
     padding:10vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -118,17 +123,11 @@ img {
     justify-content: center;
     align-items: center;
     width: 150px;
-}
-
-.itemSet:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #1F2937;
+    transition-duration: 1s;
 }
   
 .itemSet:hover {
-    color: #1F2937;
-    box-shadow: 0 0 5px #1F2937;
-    text-shadow: 0 0 5px #1F2937;
+    transform: scale(1.3);
 }
 
 .itemText {
@@ -147,10 +146,9 @@ img {
     display: flex;
     flex-direction: column;
     background-color: #e5e7eb;
-    padding:5vw;
-    padding-right: 10vw;
-    padding-left: 10vw;
-
+    padding:10vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .quoteContent {
@@ -170,6 +168,7 @@ img {
     display: flex;
     background-color: #F9FAF8;
     padding:5vw;
+    padding-bottom: 10px;
 }
 
 .section4Container {
